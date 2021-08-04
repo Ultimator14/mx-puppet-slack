@@ -2,7 +2,7 @@ FROM node:15.0-alpine3.12 AS builder
 
 WORKDIR /opt/mx-puppet-slack
 
-RUN apk --no-cache add git python2 make g++ pkgconfig \
+RUN apk --no-cache add git python3 make g++ pkgconfig \
     build-base \
     cairo-dev \
     jpeg-dev \
