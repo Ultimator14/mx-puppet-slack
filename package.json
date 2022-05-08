@@ -1,5 +1,5 @@
 {
-  "name": "mx-puppet-slack",
+  "name": "@mx-puppet/mx-puppet-slack",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "author": "Sorunome",
   "dependencies": {
+    "@mx-puppet/bridge": "0.1.8",
+    "@mx-puppet/matrix-slack-parser": "^0.1.8",
     "@slack/web-api": "^5.8.0",
     "command-line-args": "^5.1.1",
     "command-line-usage": "^5.0.5",
     "escape-html": "^1.0.3",
     "events": "^3.1.0",
     "js-yaml": "^3.13.1",
-    "matrix-slack-parser": "^0.1.8",
-    "mx-puppet-bridge": "0.1.6",
     "node-emoji": "^1.10.0",
     "soru-slack-client": "0.1.2",
     "tslint": "^5.20.1",
@@ -27,5 +27,6 @@
   },
   "devDependencies": {
     "@types/node": "^12.12.34"
-  }
+  },
+  "packageManager": "yarn@3.2.0"
 }
