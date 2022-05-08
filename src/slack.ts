@@ -13,10 +13,10 @@ import {
 	MessageDeduplicator,
 	ISendingUser,
 	IPresenceEvent,
-} from "mx-puppet-bridge";
+} from "@mx-puppet/bridge";
 import {
 	SlackMessageParser, ISlackMessageParserOpts, MatrixMessageParser, IMatrixMessageParserOpts,
-} from "matrix-slack-parser";
+} from "@mx-puppet/matrix-slack-parser";
 import * as Slack from "soru-slack-client";
 import * as Emoji from "node-emoji";
 import { SlackProvisioningAPI } from "./api";

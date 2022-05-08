@@ -19,12 +19,16 @@ RUN apk --no-cache add git python2 make g++ pkgconfig \
 RUN chown -R node:node /opt/mx-puppet-slack
 USER node
 
-COPY --chown=node:node package.json package-lock.json ./
-RUN npm install
+COPY --chown=node:node package.json yarn.lock .yarnrc.yml ./
+COPY --chown=node:node .yarn/ .yarn/
+
+USER node
+
+RUN yarn install --immutable
 
 COPY --chown=node:node tsconfig.json ./
 COPY --chown=node:node src/ ./src/
-RUN npm run build
+RUN yarn build
 
 
 FROM node:15.0-alpine3.12
