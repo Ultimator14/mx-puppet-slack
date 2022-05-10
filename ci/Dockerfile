@@ -1,4 +1,5 @@
-FROM node:12-alpine
+ARG NODE_IMAGE="node:15-alpine"
+FROM $NODE_IMAGE
 
 VOLUME /data
 
