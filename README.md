@@ -19,32 +19,39 @@ Also check the config for other values, like your homeserver domain.
 
 ## Install Instructions (from Source)
 
-*   Clone and install:
-    ```
+* Clone and install:
+    ```bash
     git clone https://github.com/Sorunome/mx-puppet-slack.git
     cd mx-puppet-slack
-    npm install
+    yarn install
     ```
-*   Edit the configuration file and generate the registration file:
-    ```
+    
+    If install complains about `node-canvas`, you can let it compile from
+    source by installing the build dependencies and rerunning install:
+   - For Ubuntu:
+     ```bash
+     sudo apt-get install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
+     ```
+* Edit the configuration file and generate the registration file:
+    ```bash
     cp sample.config.yaml config.yaml
     # fill info about your homeserver and Slack app credentials to config.yaml manually
-    npm run start -- -r # generate registration file
+    yarn start -- -r # generate registration file
     ```
-*   Copy the registration file to your synapse config directory.
-*   Add the registration file to the list under `app_service_config_files:` in your synapse config.
-*   Restart synapse.
-*   Start the bridge:
+* Copy the registration file to your synapse config directory.
+* Add the registration file to the list under `app_service_config_files:` in your synapse config.
+* Restart synapse.
+* Start the bridge:
+    ```bash
+    yarn start
     ```
-    npm run start
-    ```
-*   Start a direct chat with the bot user (`@_slackpuppet_bot:domain.tld` unless you changed the config).
+* Start a direct chat with the bot user (`@_slackpuppet_bot:domain.tld` unless you changed the config).
     (Give it some time after the invite, it'll join after a minute maybe.)
-*   Get your Slack tokens as below, and tell the bot user to link your workspaces:
+* Get your Slack tokens as below, and tell the bot user to link your workspaces:
     ```
     link MYTOKEN (see below for details)
     ```
-*   Tell the bot user to list the available rooms: (also see `help`)
+* Tell the bot user to list the available rooms: (also see `help`)
     ```
     list
     ```
