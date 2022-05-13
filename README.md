@@ -36,7 +36,7 @@ Also check the config for other values, like your homeserver domain.
     ```bash
     cp sample.config.yaml config.yaml
     # fill info about your homeserver and Slack app credentials to config.yaml manually
-    yarn start -- -r # generate registration file
+    yarn start -r # generate registration file
     ```
 * Copy the registration file to your synapse config directory.
 * Add the registration file to the list under `app_service_config_files:` in your synapse config.
