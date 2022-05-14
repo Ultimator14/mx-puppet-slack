@@ -12,7 +12,7 @@
   "author": "Sorunome",
   "dependencies": {
     "@mx-puppet/bridge": "0.1.8",
-    "@mx-puppet/matrix-slack-parser": "^0.1.8",
+    "@mx-puppet/matrix-slack-parser": "^0.1.10",
     "@slack/web-api": "^5.8.0",
     "command-line-args": "^5.1.1",
     "command-line-usage": "^5.0.5",

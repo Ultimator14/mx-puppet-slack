@@ -102,9 +102,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mx-puppet/matrix-slack-parser@npm:^0.1.8":
-  version: 0.1.9
-  resolution: "@mx-puppet/matrix-slack-parser@npm:0.1.9::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F35067728%2Fpackages%2Fnpm%2F%40mx-puppet%2Fmatrix-slack-parser%2F-%2F%40mx-puppet%2Fmatrix-slack-parser-0.1.9.tgz"
+"@mx-puppet/matrix-slack-parser@npm:^0.1.10":
+  version: 0.1.10
+  resolution: "@mx-puppet/matrix-slack-parser@npm:0.1.10::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F35067728%2Fpackages%2Fnpm%2F%40mx-puppet%2Fmatrix-slack-parser%2F-%2F%40mx-puppet%2Fmatrix-slack-parser-0.1.10.tgz"
   dependencies:
     dateformat: ^3.0.3
     escape-html: ^1.0.3
@@ -112,7 +112,7 @@ __metadata:
     node-html-parser: ^1.4.5
     slack-markdown: ^0.1.1
     unescape-html: ^1.1.0
-  checksum: 6b5bc329d7dc14782ba1e8db665113138ebb8a2a89a9c630a81d420f334b041c7c132358beab96e749e817fa879baeb96f6237d695e30ae032b224d85ae0d7ee
+  checksum: 02c7408497dfefa9a374d01479595857ce782e6f9fcaa319eda45d887f7ca34b46ee4aade333db5540d95aeda76b53d1dd299b9323dc6bad3e0fbac71804d4f4
   languageName: node
   linkType: hard
 
@@ -121,7 +121,7 @@ __metadata:
   resolution: "@mx-puppet/mx-puppet-slack@workspace:."
   dependencies:
     "@mx-puppet/bridge": 0.1.8
-    "@mx-puppet/matrix-slack-parser": ^0.1.8
+    "@mx-puppet/matrix-slack-parser": ^0.1.10
     "@slack/web-api": ^5.8.0
     "@types/node": ^12.12.34
     command-line-args: ^5.1.1
